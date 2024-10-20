@@ -1,0 +1,146 @@
+:root {
+    --color-primary: #8B4513;  /* Deep brown */
+    --color-accent: #FFA07A;   /* Soft orange */
+    --color-background: #FFFAF0; /* Floral white */
+    --color-hearth: #8B0000;   /* Deep red */
+    --color-text: #333333;     /* Dark gray for text */
+    --font-heading: 'Garamond', serif;
+    --font-body: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: #FFFAF0;;
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    background-image: url('../assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 6rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .hero p {
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .about-snippet, .atmosphere {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .specials {
+    margin-bottom: 2rem;
+  }
+  
+  .specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .special-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .special-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .special-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .special-card h3 {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0.5rem;
+  }
+  
+  .special-card p {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .special-card .price {
+    display: block;
+    padding: 0.5rem 1rem 1rem;
+    font-weight: bold;
+    color: var(--color-hearth);
+  }
+  
+  .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-hearth);
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.2rem;
+    }
+  
+    .specials-grid {
+      grid-template-columns: 1fr;
+    }
+  }

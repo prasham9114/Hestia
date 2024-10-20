@@ -1,0 +1,133 @@
+/* RecentOrders.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+
+}
+
+:root {
+    --color-primary: #8B4513;
+    --color-accent: #FFA07A;
+    --color-background: #FFFAF0;
+    --color-hearth: #8B0000;
+    --color-text: #333333;
+    --color-shadow: rgba(0, 0, 0, 0.15);
+    --font-heading: 'Garamond', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+.user-page{
+    margin: 2rem;
+    color: white;
+}
+
+.user-hero {
+    background-image: url('../assets/user-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 9rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+  }
+
+.user-hero h1
+{
+    color: white;
+}
+
+.user-hero p
+{
+    color: white;
+}
+
+.orders-container {
+    padding: 2rem;
+    max-width: 150rem;
+    margin: 0 auto;
+    
+}
+
+h2 {
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.order-card h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #8B4513;
+}
+
+.order-card p {
+    margin: 2px 0;
+    color: #555;
+}
+
+.item-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.item-card p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.loading,
+.error {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
+
+.logout-button {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space out the items */
+}
+
+.hello {
+    grid-column: 1; /* Place in the first column */
+}
+
+.logout {
+    grid-column: 2; /* Place in the second column */
+}

@@ -1,0 +1,129 @@
+:root {
+    --color-primary: #8B4513;
+    --color-accent: #FFA07A;
+    --color-background: #FFFAF0;
+    --color-hearth: #8B0000;
+    --color-text: #333333;
+    --color-shadow: rgba(0, 0, 0, 0.15);
+    --font-heading: 'Garamond', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+.user-page{
+    margin: 2rem;
+    color: white;
+}
+
+.user-hero {
+    background-image: url('../assets/user-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 9rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+  }
+
+.user-hero h1
+{
+    color: white;
+}
+
+.user-hero p
+{
+    color: white;
+}
+  
+.user-display {
+    font-family: var(--font-body);
+    background-color: white;
+    border: 1px solid var(--color-accent);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px var(--color-shadow);
+    padding: 2rem;
+    max-width: 60rem;
+    margin: 2rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-display:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--color-shadow);
+}
+
+.user-display h2 {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.user-info p, .order-section p {
+    margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.user-info p svg, .order-section h3 svg {
+    margin-right: 0.75rem;
+    color: var(--color-primary);
+}
+
+.order-section h3 {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.order-item {
+    background-color: var(--color-background);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-accent);
+    transition: background-color 0.3s ease;
+}
+
+.order-item:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.order-item p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+}
+
+.error {
+    color: var(--color-hearth);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .user-display {
+        max-width: 90%;
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .user-display h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-info p, .order-section p {
+        font-size: 1rem;
+    }
+
+    .order-section h3 {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,132 @@
+/* Register.css */
+
+.signup-page {
+  margin: 2rem;
+  color: white;
+}
+
+.signup-hero {
+  background-image: url('../assets/login-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.signup-hero h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.signup-hero p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.signup-form-container {
+  width: 90%; 
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: grid; /* Change to grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  gap: 1.5rem; /* Space between grid items */
+}
+
+h2 {
+  grid-column: span 2; /* Header spans across both columns */
+  text-align: center;
+  color: #8B4513;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading, 'Garamond', serif);
+}
+
+form {
+  display: contents; /* Use contents so form elements can be direct children of grid */
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  color: #8B4513;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #8B4513;
+  outline: none;
+}
+
+button {
+  background-color: #8B4513;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #A0522D !important;
+}
+
+p {
+  color: #8B4513;
+  text-align: center;
+}
+
+a {
+  color: #A0522D;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr; /* Stack items in one column on small screens */
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+  }
+}
+
+.submit{
+  grid-column: span 2;
+  display: flexbox;
+  justify-self: center;
+  width: 80%;
+}
+
+.submit button{
+  width: 80%;
+}
